@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: rgb(97, 217, 97);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+nav > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: black
+
+}
+
+nav > a:hover{ text-decoration: underline;}
+
+#user{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.list{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.list > p{
+    text-align: left;
+}
+
+.list:hover{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+

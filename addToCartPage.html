@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Page</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    nav{
+
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        background-color: rgb(97, 217, 97);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav > a{
+        text-decoration: none;
+        font-size: medium;
+        font-weight: bold;
+        color: black
+
+    }
+
+    #cart{
+        display: flex;
+        gap: 20px;
+    }
+
+    .list{
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    nav > a:hover{ text-decoration: underline;}
+
+    .list > p{text-align: left; margin: 5px;}
+
+    .list > button{padding: 5px; border-radius: 5px; font-weight: bold;}
+    .list > button:hover{background-color: rgb(234, 81, 81); color: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+
+</style>
+<body>
+    <div id="main">
+        <nav>
+            <a href="./index.html">HOME</a><a href="#">CART</a>
+        </nav>
+        <h1 style="text-decoration: underline; margin-bottom: 20px;">Add To Cart</h1>
+        <div id="cart"></div>
+    </div>
+    <script src="./addToCart.js"></script>
+</body>
+</html>
