@@ -68,15 +68,17 @@ function createCard(item){
     let name = document.createElement('p')
     let username = document.createElement('p')
     let email = document.createElement('p')
+    let button  = document.createElement('button')
+    button.textContent = 'Add To Cart'
     div.setAttribute('key',item.id)
     div.className = 'list'
     name.textContent = `Name : ${item.name}`
     username.textContent = `Username : ${item.username}`
     email.textContent = `Email : ${item.email}`
 
-    div.append(name,username,email)
+    div.append(name,username,email,button)
 
-    div.addEventListener('click',()=>{localStorage.setItem(`userID : ${div.getAttribute('key')}`,JSON.stringify(item))})
+    button.addEventListener('click',()=>{localStorage.setItem(`userID : ${div.getAttribute('key')}`,JSON.stringify(item))})
 
     return div
 
